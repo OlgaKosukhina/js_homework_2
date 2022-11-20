@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // Задача 1
+
+        let firstNumber = Number(prompt('Введите первое число'));
+        let secondNumber = Number(prompt('Введите второе число'));
+
+        (firstNumber <= 1) ? console.log('Число меньше или равно 1') : console.log('Число больше 1');
+        (secondNumber >= 3) ? console.log('Число больше или равно 3') : console.log('Число меньше 3');
+
+        // Задача 2
+
+        let test = true;
+        (test === true) ? console.log('+++') : console.log('---');
+
+        // Задача 3
+
+        let day = 15;
+
+        if (day >= 1 && day <= 10) {
+            console.log('Число находится в первой декаде месяца');
+        } else if (day > 10 && day <= 20) {
+            console.log('Число находится во второй декаде месяца');
+        } else if (day > 20 && day <= 31) {
+            console.log('Число находится в третьей декаде месяца');
+        }
+
+        // Задача 4
+
+        let userNumber = Number(prompt('Введите число'));
+
+        console.log(`В числе ${userNumber} количество сотен: ${parseInt((userNumber / 100) % 10)}, десятков: ${parseInt((userNumber % 100) / 10)}, единиц: ${userNumber % 10}`);
+
+    </script>
+</body>
+
+</html>
